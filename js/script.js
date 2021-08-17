@@ -29,3 +29,10 @@ if(popup_bg){
         popup_bg.classList.remove('popup-bg-active');
     });
 }
+    $('.filter-icon').click(function(){
+        $('#popup-filter').show();
+    })
+
+    $('.closebutton').click(function(){
+        $('#popup-filter').hide();
+    })

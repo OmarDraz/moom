@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@import "animation.css";
+@import "nav-bar.css";
+@import "footer.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+.Cart-main{
+    width:  80%;
+    height: auto ;
+    margin: 80px auto;
+}
+table{
+width: 100%;
+margin: 0;
+padding: 0;
+border-collapse: collapse;
+}
+th{
+    background-color: #008bff;
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    font-weight: normal;
+}
+th:last-child{
+    text-align: right;
+
+}
+td{
+    padding: 10px 5px  ;
+    margin-bottom: 20px;
+}
+td:last-child{
+    text-align: right;
+
+}
+
+.product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-info img{
+    width: 120px ;
+    height: auto;
+    margin-right: 10px;
+    
+}
+.product-info div{
+    margin: 5px;
+
+}
+
+.product-info div *{
+    margin: 5px;
+
+}
+
+.product-info div small{
+   display: block;
+    
+}
+.product-info div a{
+    color: rgb(235, 23, 23);
+    font-size: 15px;
+     
+}
+.Cart-main input{
+    width: 40px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.total{
+   display: flex;
+   justify-content: flex-end;
+}
+.total table{
+    width: 100%;
+    max-width: 330px;
+    border-top: 2px solid #008bff;
+
+}
+
+
+.total table button{
+    
+    width: 250px;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #008bff;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    outline: none;
+
+}
+
+.total table button:hover{
+box-shadow: 1px 5px  3px  rgba(0, 0, 0, 0.4);
+}
+
+@media screen and  (max-width: 630px){
+
+    .Cart-main{
+        width: 95%;
+        margin: 2.5%;
+    }
+}
+
+@media screen and  (max-width: 500px){
+    table h3{
+        display: none;
+    }
+}
+

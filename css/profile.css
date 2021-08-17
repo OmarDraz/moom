@@ -4,6 +4,8 @@
 
 @import "animation.css";
 @import "nav-bar.css";
+@import "footer.css";
+
 *{
     margin: 0;
     padding: 0;
@@ -18,9 +20,10 @@
     overflow-x: hidden;
     margin:0 50px;
 }
+
 header{
     width: 100%;
-    height: 300px;
+    height: 400px;
     position: relative;
     box-shadow: 0px 3px 4px rgba(0, 0,0,0.2);
 }
@@ -322,28 +325,48 @@ header img {
     padding: 30px 20px 10px 20px;
     background-color: #fff;
     width: 60%;
-    height: 100%;
+    height: 90%;
     overflow-y: scroll;
     position: absolute;
     left: 20%;
     border-radius: 10px;
+    margin-top: 5%;
+
+
 
 }
-.popup-white a {
-    position: absolute;
-    top: -20;
-    right: -20;
+.popup-white .close{
+    position: fixed;
+    top: 20px;
+    right: 18%;
     font-size: 20px;
-    color: white;
+    color: #fff;
     cursor: pointer;
-
+    
+    
 }
+
+
 .popup-white span:hover{
     background: -webkit-linear-gradient(#89216B,  #DA4453);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.3); 
 }
+.popup-white::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .popup-white::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+    display: none;
+  }
+  .popup-white:hover::-webkit-scrollbar-thumb {
+    display: block;
+  }
+  
 
 .popup-content{
     width: 100%;
@@ -489,14 +512,34 @@ justify-content: center;
        margin-bottom: 15px;
        font-size: 1.6rem;
    }
+   .popup-white{
+    width: 70%;
+    left:15%;
+    }
+    .popup-white .close{
+        right: 15%;
+    }
+
 
 }
+
 
 @media screen and (max-width:500px){
  
     .container-settins{
         width: 95%;
         margin-left: 2.5%;
+    }
+}
+
+
+@media screen and (max-width:480px){
+    .popup-white{
+        width: 80%;
+        left:10%;
+    }
+    .popup-white .close{
+        right: 5%;
     }
 }
 
